@@ -11,7 +11,7 @@ function lengthOfLongestElement (&$array) {
 }
 
 class WordSearch {
-   var $MAXWIDTH   = 38;                /* 79 cols / 2 (to fit on CRT or printer */
+   var $MAXWIDTH   = 36;                /* 79 cols / 2 (to fit on CRT or printer */
    var $SIZEFUDGE  = 3;                 /* Make the array smaller by this amount */
    var $NUMOFFIT   = 10;
    var $arrayOfColorsForWord = array();
@@ -134,7 +134,7 @@ class WordSearch {
       (int) $count;
 
       /* Make the puzzle a bit larger					*/
-      if ($this->width = $this->MAXWIDTH) {
+      if ($this->width < $this->MAXWIDTH) {
          $this->width++;
          $this->length++;
          //$this->puzzle = NULL;
