@@ -13,7 +13,7 @@ function lengthOfLongestElement (&$array) {
 class WordSearch {
    var $MAXWIDTH   = 36;                /* 79 cols / 2 (to fit on CRT or printer */
    var $SIZEFUDGE  = 3;                 /* Make the array smaller by this amount */
-   var $NUMOFFIT   = 10;
+   var $NUMOFFIT   = 12;
    var $arrayOfColorsForWord = array();
    
    function WordSearch ($array)
@@ -56,7 +56,7 @@ class WordSearch {
 * in practic
 */
       $this->width = 20;
-      $this->length = $this->width;
+      $this->length = 15;
 /*
 * Make the puzzle artificially smaller.  This means that if the word
 * fitting algorithm happens to have a good day, the puzzle can be
