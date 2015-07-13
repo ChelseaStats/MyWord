@@ -49,17 +49,7 @@ class WordSearch {
 
    for($m = 0; $m < 42; $m++) {
       // Line 1: red = 0 ; green = 0 -> 255 ; blue = 255
-      $this->arrayOfColors[$m] = $this->rgb2hex(0, $m * 6, 255);
-      // Line 2: red = 255 -> 0 ; green = 0 ; blue = 255
-      $this->arrayOfColors[$m + 42] = $this->rgb2hex((255 - $m * 6), 255, 0);
-      // Line 3: red = 0 ; green = 255 ; blue = 0 -> 255
-      $this->arrayOfColors[$m + 84] = $this->rgb2hex(0, 255, $m * 6);
-      // Line 4: red = 0 ; green = 255 -> 0 ; blue = 255
-      $this->arrayOfColors[$m + 126] = $this->rgb2hex($im, 0, (255 - $m * 6), 255);
-      // Line 5: red = 0 -> 255 ; green = 0 ; blue = 255
-      $this->arrayOfColors[$m + 168] = $this->rgb2hex($m * 6, 0, 255);
-      // Line 6: red = 255 ; green = 0 ; blue = 255 -> 0
-      $this->arrayOfColors[$m + 210] = $this->rgb2hex(255, 0, (255 - $m * 6));
+      $this->arrayOfColors[$m] = $this->rgb2hex(80, 80, 80);
    }
 
       
