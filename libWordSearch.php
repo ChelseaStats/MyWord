@@ -154,7 +154,7 @@ class WordSearch {
       (int) $count;
 
       /* Make the puzzle a bit larger					*/
-      if ($this->width < $this->MAXWIDTH) {
+      if ($this->width = $this->MAXWIDTH) {
          $this->width++;
          $this->length++;
          //$this->puzzle = NULL;
