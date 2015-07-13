@@ -13,7 +13,7 @@ function lengthOfLongestElement (&$array) {
 class WordSearch {
    var $MAXWIDTH   = 36;                /* 79 cols / 2 (to fit on CRT or printer */
    var $SIZEFUDGE  = 3;                 /* Make the array smaller by this amount */
-   var $NUMOFFIT   = 10;
+   var $NUMOFFIT   = 14;
    var $arrayOfColorsForWord = array();
    
    function WordSearch ($array)
