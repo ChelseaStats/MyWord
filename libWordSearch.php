@@ -55,18 +55,8 @@ class WordSearch {
 * dimension must be at least as long as the longest word.  However,
 * in practicE...
 */
-      $this->width  = 10;
-      $this->length = 20;
-/*
-* Make the puzzle artificially smaller.  This means that if the word
-* fitting algorithm happens to have a good day, the puzzle can be
-* smaller than the sum of all of the characters.  On the other hand,
-* making it too small would cause extra work by forcing the board
-* to grow repeatedly.  Note that there is no check to make sure that
-* the longest word will fit.
-*/
       $this->width  = 20;
-      $this->length = 10;
+      $this->length = 15;
 
 /*
 * It looks silly when all of the words are lined up.  Force
