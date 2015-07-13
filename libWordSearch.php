@@ -11,7 +11,7 @@ function lengthOfLongestElement (&$array) {
 }
 
 class WordSearch {
-   var $MAXWIDTH   = 72;                /* 79 cols / 2 (to fit on CRT or printer */
+   var $MAXWIDTH   = 38;                /* 79 cols / 2 (to fit on CRT or printer */
    var $SIZEFUDGE  = 3;                 /* Make the array smaller by this amount */
    var $NUMOFFIT   = 10;
    var $arrayOfColorsForWord = array();
@@ -26,33 +26,13 @@ class WordSearch {
    
    function build_color_array ()
    {
-     /*
-      (int) $r = 110;
-      (int) $g = 50;
-      (int) $b = 75;
-      (int) $s = 30;
-      */
-      (int) $r = 110;
-      (int) $g = 50;
-      (int) $b = 75;
-      (int) $s = 10;
-     
-     /*
-      for ($i=0; $i<count($this->arrayOfWords); $i++) {
-         $r+=$this->rndint(20);
-         $g+=$this->rndint(10);
-         $b+=$s;
-         
-         $this->arrayOfColors[] = $this->rgb2hex($r, $g, $b);
-      }
-      */
 
    for($m = 0; $m < 42; $m++) {
       // Line 1: red = 0 ; green = 0 -> 255 ; blue = 255
-      $this->arrayOfColors[$m] = $this->rgb2hex(160, 160, 160);
-      $this->arrayOfColors[$m + 20] = $this->rgb2hex(160, 160, 160);
-      $this->arrayOfColors[$m + 40] = $this->rgb2hex(160, 160, 160);
-      $this->arrayOfColors[$m + 60] = $this->rgb2hex(160, 160, 160);
+      $this->arrayOfColors[$m] 		= $this->rgb2hex(160, 160, 160);
+      $this->arrayOfColors[$m + 20] 	= $this->rgb2hex(160, 160, 160);
+      $this->arrayOfColors[$m + 40] 	= $this->rgb2hex(160, 160, 160);
+      $this->arrayOfColors[$m + 60] 	= $this->rgb2hex(160, 160, 160);
    }
 
       
@@ -75,7 +55,7 @@ class WordSearch {
 * dimension must be at least as long as the longest word.  However,
 * in practic
 */
-      $this->width = lengthOfLongestElement ($this->arrayOfWords);
+      $this->width = 20;
       $this->length = $this->width;
 /*
 * Make the puzzle artificially smaller.  This means that if the word
