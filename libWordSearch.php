@@ -13,7 +13,7 @@ function lengthOfLongestElement (&$array) {
 class WordSearch {
    var $MAXWIDTH   = 36;                /* 79 cols / 2 (to fit on CRT or printer */
    var $SIZEFUDGE  = 3;                 /* Make the array smaller by this amount */
-   var $NUMOFFIT   = 14;
+   var $NUMOFFIT   = 10;
    var $arrayOfColorsForWord = array();
    
    function WordSearch ($array)
@@ -213,10 +213,7 @@ class WordSearch {
                }
 
       /*
-		* See if we are sharing more characters than we did before.
-		* If so, then save the data, as that is good.  However,
-		* Lynne objects if the whole word is shared with a single
-		* other word.  So also make sure that the number of shared
+		* Make sure that the number of shared
 		* characters is less than the length of the word.  This isn't
 		* perfect, as it disallows some assignments where the word
 		* is entirely shared with more than one other word.  However,
