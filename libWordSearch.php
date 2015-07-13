@@ -11,9 +11,9 @@ function lengthOfLongestElement (&$array) {
 }
 
 class WordSearch {
-   var $MAXWIDTH   = 36;                /* 79 cols / 2 (to fit on CRT or printer */
+   var $MAXWIDTH   = 40;                /* 79 cols / 2 (to fit on CRT or printer */
    var $SIZEFUDGE  = 3;                 /* Make the array smaller by this amount */
-   var $NUMOFFIT   = 20;
+   var $NUMOFFIT   = 10;
    var $arrayOfColorsForWord = array();
    
    function WordSearch ($array)
@@ -65,8 +65,8 @@ class WordSearch {
 * to grow repeatedly.  Note that there is no check to make sure that
 * the longest word will fit.
 */
-      $this->length = 20;
       $this->width  = 15;
+      $this->length = 15;
 
 /*
 * It looks silly when all of the words are lined up.  Force
