@@ -76,7 +76,7 @@ for ($x=0; $x<=$crap->width; $x++) {
         </table>
       </td>
       <td valign="top">
-        <h1>Words</h1>
+        <h1>Players</h1>
         <ul>
 <?php
   for($i=0; $i<10; $i++) {
