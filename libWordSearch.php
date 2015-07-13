@@ -11,7 +11,7 @@ function lengthOfLongestElement (&$array) {
 }
 
 class WordSearch {
-   var $MAXWIDTH   = 58;                /* 79 cols / 2 (to fit on CRT or printer */
+   var $MAXWIDTH   = 72;                /* 79 cols / 2 (to fit on CRT or printer */
    var $SIZEFUDGE  = 3;                 /* Make the array smaller by this amount */
    var $NUMOFFIT   = 10;
    var $arrayOfColorsForWord = array();
@@ -48,9 +48,9 @@ class WordSearch {
       */
 
    for($m = 0; $m < 42; $m++) {
-      // Line 1: red = 255 ; green = 0 -> 255 ; blue = 0
-      $this->arrayOfColors[$m] = $this->rgb2hex(255, $m * 6, 0);
-      // Line 2: red = 255 -> 0 ; green = 255 ; blue = 0
+      // Line 1: red = 0 ; green = 0 -> 255 ; blue = 255
+      $this->arrayOfColors[$m] = $this->rgb2hex(0, $m * 6, 255);
+      // Line 2: red = 255 -> 0 ; green = 0 ; blue = 255
       $this->arrayOfColors[$m + 42] = $this->rgb2hex((255 - $m * 6), 255, 0);
       // Line 3: red = 0 ; green = 255 ; blue = 0 -> 255
       $this->arrayOfColors[$m + 84] = $this->rgb2hex(0, 255, $m * 6);
@@ -152,7 +152,7 @@ class WordSearch {
    
    function rndchar ()
    {
-      return chr(mt_rand(97,122));
+      return strtoupper(chr(mt_rand(97,122)));
    }
 
    function grow ()
