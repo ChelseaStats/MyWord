@@ -55,7 +55,7 @@ class WordSearch {
 * dimension must be at least as long as the longest word.  However,
 * in practicE...
 */
-      $this->width  = 15;
+      $this->width  = 10;
       $this->length = 20;
 /*
 * Make the puzzle artificially smaller.  This means that if the word
@@ -65,8 +65,8 @@ class WordSearch {
 * to grow repeatedly.  Note that there is no check to make sure that
 * the longest word will fit.
 */
-      $this->width  = 15;
-      $this->length = 15;
+      $this->width  = 20;
+      $this->length = 10;
 
 /*
 * It looks silly when all of the words are lined up.  Force
