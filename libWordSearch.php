@@ -53,9 +53,9 @@ class WordSearch {
 /*
 * The first task is to guess at the size of the final board.  One
 * dimension must be at least as long as the longest word.  However,
-* in practic
+* in practicE...
 */
-      $this->width = 15;
+      $this->width  = 15;
       $this->length = 20;
 /*
 * Make the puzzle artificially smaller.  This means that if the word
@@ -65,8 +65,8 @@ class WordSearch {
 * to grow repeatedly.  Note that there is no check to make sure that
 * the longest word will fit.
 */
-      $this->length -= $this->SIZEFUDGE;
-      $this->width -= $this->SIZEFUDGE;
+      $this->length = 15;
+      $this->width  = 20;
 
 /*
 * It looks silly when all of the words are lined up.  Force
