@@ -2,7 +2,7 @@
 
 include('libWordSearch.php');
 
-$tmp = file("words");
+$tmp = file("words.md");
 $default_words = array();
 foreach ($tmp as $line) {
   $default_words[] = trim($line);
