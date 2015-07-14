@@ -97,7 +97,7 @@ for ($x=0; $x<=$crap->width; $x++) {
         </tr>
         </table>
         
-        <div style="margin-left:250px; Margin-top:250px;">
+        <div style="margin-left:100px; Margin-top:100px;">
         <input id="solve" type="checkbox" onclick="show_solution()"/>
         <label for="solve">Show Solution?</label>
         <br/>
