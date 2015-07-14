@@ -87,7 +87,6 @@ for ($x=0; $x<=$crap->width; $x++) {
         </table>
       </td>
       <td valign="top">
-        <h1>Players</h1>
         <ul>
 <?php
   for($i=0; $i < $total_words; $i++) {
