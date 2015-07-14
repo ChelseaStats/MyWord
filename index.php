@@ -1,5 +1,11 @@
 <?php
 
+// Config
+
+	$total_words = 14;
+
+//
+//
 include('libWordSearch.php');
 
 $tmp = file("words.md");
@@ -12,7 +18,6 @@ $words_to_use = (isset($_REQUEST['words']) && is_array($_REQUEST['words'])) ? $_
 
 $crap = New WordSearch ($words_to_use);
 
-//print_r($crap->arrayOfColorsForWord);
 
 ?>
 <html>
@@ -22,7 +27,7 @@ $crap = New WordSearch ($words_to_use);
     <script>
       function show_solution () {
         $A($$('.letter')).each(function (td) {
-            word = td.classNames().grep("word")
+            word = td.classNames().grep("word");
             word = word.toString().replace("word_", "");
             td.toggleClassName('color_' + word);
         });
@@ -66,7 +71,7 @@ for ($x=0; $x<=$crap->width; $x++) {
    for ($y=0; $y<=$crap->length; $y++) {
       $chr = $crap->puzzle[$x][$y];
       if (!strlen($chr)) {
-         $chr = '<td>'.$crap->rndchar().'</td>';
+         $chr = '<td>'.$crap->rnd_char().'</td>';
       }
       echo $chr;
    }
@@ -79,7 +84,7 @@ for ($x=0; $x<=$crap->width; $x++) {
         <h1>Players</h1>
         <ul>
 <?php
-  for($i=0; $i<10; $i++) {
+  for($i=0; $i < $total_words; $i++) {
     $word = (isset($_REQUEST['words'][$i]) ? $_REQUEST['words'][$i] : $default_words[$i]);
     echo '<li>'
     . '<input type="text" name="words[]" value="'.$word.'" class="color_'.$word.'"/>'
