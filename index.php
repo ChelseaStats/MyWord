@@ -93,11 +93,14 @@ for ($x=0; $x<=$crap->width; $x++) {
 ?>
         </ul>
         <br/>
+        <div style="margin-left:50px; Margin-top:50px;">
         <input id="solve" type="checkbox" onclick="show_solution()"/>
         <label for="solve">Show Solution?</label>
         <br/>
         <br/>
         <input type="submit" value="Generate"/>
+        
+        </div>
       </td>
     </table>
     </form>
