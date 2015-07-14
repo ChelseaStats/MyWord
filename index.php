@@ -59,14 +59,15 @@ $crap = New WordSearch ($words_to_use);
       }
       table, tr, td { 
       	border:1px solid grey; border-collapse:collapse;
-      	padding:3px;
+      	padding:5px;
+      	text-align:center;
       	
       }
     </style>
   </head>
   <body>
   <form action="?" method="post">
-  <table border="1">
+  <table>
     <tr>
       <td>
         <table>
@@ -100,14 +101,11 @@ for ($x=0; $x<=$crap->width; $x++) {
         <br/>
         </td>
         <td>
-
-        <div style="margin-left:50px; Margin-top:50px;">
         <input id="solve" type="checkbox" onclick="show_solution()"/>
         <label for="solve">Show Solution?</label>
         <br/>
         <br/>
         <input type="submit" value="Generate"/>
-        </div>
         </td>
         </tr>
         </table>
