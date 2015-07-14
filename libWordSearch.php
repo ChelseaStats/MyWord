@@ -6,6 +6,7 @@
 		var $SIZE_FUDGE           = 0;                 /* Make the array smaller by this amount */
 		var $NUM_OFF_IT           = 15;
 		var $arrayOfColors        = array ();
+		var $arrayOfWords         = array ();
 		var $arrayOfColorsForWord = array ();
 
 		function WordSearch( $array ) {
