@@ -93,7 +93,11 @@ for ($x=0; $x<=$crap->width; $x++) {
 ?>
         </ul>
         <br/>
-        <div style="margin-left:50px; Margin-top:50px;">
+        </td>
+        </tr>
+        </table>
+        
+        <div style="margin-left:250px; Margin-top:250px;">
         <input id="solve" type="checkbox" onclick="show_solution()"/>
         <label for="solve">Show Solution?</label>
         <br/>
@@ -101,8 +105,7 @@ for ($x=0; $x<=$crap->width; $x++) {
         <input type="submit" value="Generate"/>
         
         </div>
-      </td>
-    </table>
+
     </form>
   </body>
 </html>
