@@ -22,7 +22,7 @@ $crap = New WordSearch ($words_to_use);
 ?>
 <html>
   <head>
-    <title>word search</title>
+    <title>Chelsea FC word search</title>
     <script src="prototype.js" type="text/javascript"></script>
     <script>
       function show_solution () {
@@ -57,6 +57,11 @@ $crap = New WordSearch ($words_to_use);
       td {
         padding: 0.5em;
       }
+      table, tr, td { 
+      	border:1px solid grey; border-collapse:collapse;
+      	padding:3px;
+      	
+      }
     </style>
   </head>
   <body>
@@ -64,7 +69,7 @@ $crap = New WordSearch ($words_to_use);
   <table border="1">
     <tr>
       <td>
-        <table border=0 cellspacing=0 cellpadding=2>
+        <table>
 <?php
 for ($x=0; $x<=$crap->width; $x++) {
    echo '<tr>';
